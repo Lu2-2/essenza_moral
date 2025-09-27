@@ -1,1 +1,0 @@
-# essenza_moral
