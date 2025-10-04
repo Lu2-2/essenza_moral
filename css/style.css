@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&display=swap');
+
 :root {
     --bg: #111;
     --muted: #2b2b2b;
@@ -5,6 +8,8 @@
     --accentL: #f48f38;
     --card: #1c1c1c;
     --text: #f9f9f9;
+    --font-1: "Italianno", sans-serif;
+    --font-2: "Italiana", sans-serif;
     font-family: system-ui, sans-serif;
 }
 
@@ -15,22 +20,24 @@
 }
 
 body {
+    font-family: var(--font-2);
     background: var(--bg);
     color: var(--text);
 }
 
 header {
+    font-size: 1.3em;
+    font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
+    padding: 10px 40px;
     background: #000;
 }
 
 .logo img {
     width: 120px;
     padding: 10px;
-    background: var(--muted);
     border-radius: 6px
 }
 
@@ -63,6 +70,8 @@ header {
 .btn {
     background: var(--accent);
     color: var(--text);
+    font-family: var(--font-2);
+    font-weight: 800;
     padding: 10px 16px;
     border-radius: 6px;
     outline: none;
@@ -76,11 +85,14 @@ header {
     background: var(--accentL);
 }
 
-/* Hero */
+/* boas_vindas */
 
-.hero {
-    height: 480px;
-    background: var(--muted);
+.boas_vindas {
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/inicio/fundo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,41 +101,43 @@ header {
 }
 
 
-.hero h1  {
-    height: 4rem;
-    width: 280px;
-    background: #555;
+.boas_vindas h1  {
+    font-family: var(--font-1);
+    font-weight: 100;
+    font-size: 6.5rem;
     border-radius: 8px;
     margin-bottom: 12px;
     padding: 10px;
 }
 
-.hero .descricao p  {
+.boas_vindas .descricao p  {
+    font-family: var(--font-2);
+    font-size: 1.5rem;
     height: auto;
-    width: 60%;
-    background: #444;
+    width: 65%;
     border-radius: 6px;
     margin: 0 auto 14px auto
 }
 
-.hero .btn {
+.boas_vindas .btn {
     margin-top: 10px
 }
 
-/* About */
-.about {
+/* mais_vendidos */
+.mais_vendidos {
     padding: 60px 40px;
     text-align: center
 }
 
-.about h2 {
-    width: 170px;
-    background: #555;
+.mais_vendidos h1 {
+    font-family: var(--font-1);
+    font-size: 5rem;
+    font-weight: 100;
     border-radius: 6px;
-    margin: 0 auto 24px
+    margin: 0 auto 30px
 }
 
-.about-grid {
+.mais_vendidos_grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px
@@ -137,21 +151,41 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    cursor: pointer;
 }
 
-.img-placeholder {
-    height: 120px;
-    width: 100%;
-    background: #444;
-    border-radius: 8px;
-    margin-bottom: 14px
+.card img{
+    width: 90%;
+    height: auto;
+    padding: 2px;
+    border: solid 2px white;
+    margin: 30px;
+    border-radius: 10px;
+}
+
+.card{
+    width: 90%;
+    transition: ease-in-out 0.2s; 
+}
+
+.card:hover{
+    transform: scale(1.1);
+    background: var(--accent);
+}
+
+.card h1{
+    font-size: 3.3em;
+    font-family: var(--font-1);
+    font-weight: 500;
 }
 
 .text-line {
+    font-size: 1.2em;
+    font-family: var(--font-2);
+    font-weight: 600;
     height: auto;
     width: 70%;
-    background: #555;
     border-radius: 6px
 }
 
@@ -171,10 +205,9 @@ header {
     border-radius: 10px
 }
 
-.special-list h2 {
-    width: 30%;
+.special-list h1 {
+    width: 100%;
     text-align: center  ;
-    background: #555;
     border-radius: 6px;
     margin-bottom: 20px
 }
@@ -183,12 +216,12 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 14px
+    margin-bottom: 14px;
+    font-size: 1.1em;
 }
 
 .item-line {
     width: 60%;
-    background: #555;
     border-radius: 6px;
 }
 
@@ -202,15 +235,30 @@ header {
 
 /* Footer */
 footer {
+    position: relative;
     background: #000;
-    padding: 40px;
-    text-align: center;
+    padding: 30px;
     margin-top: 40px
 }
 
-footer .line {
-    width: 200px;
-    background: #444;
-    border-radius: 6px;
-    margin: 0 auto
+footer .redes{
+    position: absolute;
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+    gap: 10px;
+}
+
+.redes img{
+    width: 40px;
+    background: #f9f9f9;
+    border-radius: 100%;
+    padding: 1px;
+}
+
+footer .direitos{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
