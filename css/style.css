@@ -78,10 +78,11 @@ header {
     border: none;
     cursor: pointer;
     font-weight: 500;
-    transition: background ease-in-out 0.2s;
+    transition: ease-in-out 0.2s;
 }
 
 .btn:hover{
+    transform: scale(1.1);
     background: var(--accentL);
 }
 
@@ -121,6 +122,17 @@ header {
 
 .boas_vindas .btn {
     margin-top: 10px
+}
+
+#caixa {
+  width: 300px;           /* ajuste conforme necessário */
+  height: auto;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#caixa.fade-out {
+  opacity: 0;
 }
 
 /* mais_vendidos */

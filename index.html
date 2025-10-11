@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wireframe Restaurante - Modelo Moderno</title>
+  <title>Início - Esseza Moral</title>
   <link rel="stylesheet" href="/css/style.css">
+  <script src="js/main.js"></script>
 </head>
 
 <body>
@@ -17,14 +18,14 @@
 
     <nav class="navigation">
       <ul class="nav_holder">
-        <a href="">Início</a>
-        <a href="">Cardápio</a>
-        <a href="">Nossa unidade</a>
+        <a href="#">Início</a>
+        <a href="./pages/cardapio.html">Cardápio</a>
+        <a href="./pages/unidade.html">Nossa unidade</a>
         <a href="">Sobre nós</a>
       </ul>
     </nav>
 
-    <button class="btn">Botão</button>
+    <button class="btn">Fazer Reserva</button>
   </header>
 
   <!-- Bem vindo -->
@@ -74,7 +75,7 @@
   <!-- SPECIALS -->
   <section class="specials">
     <div>
-      <img src="" alt="">
+      <img id="caixa" src="./images/pratos/itens/Risotto.png" alt="Prato">
     </div>
     
 
@@ -84,27 +85,27 @@
 
       <div class="item">
         <p class="item-line">Risotto al Tartufo Bianco</p>
-        <button class="btn" id="risotto">Ver</button>
+        <button class="btn" data-prato="Risotto">Ver</button>
       </div>
 
       <div class="item">
         <p class="item-line">Ossobuco alla Milanese com Risotto allo Zafferano</p>
-        <button class="btn" id="ossobuco">Ver</button>
+        <button class="btn" data-prato="Ossobuco">Ver</button>
       </div>
 
       <div class="item">
         <p class="item-line">Tagliolini ai Frutti di Mare con Astice (Massa com Lagosta)</p>
-        <button class="btn" id="tagliolini">Ver</button>
+        <button class="btn" data-prato="Taglioni" >Ver</button>
       </div>
 
       <div class="item">
         <p class="item-line">Fiorentina di Chianina</p>
-        <button class="btn" id="fiorentina">Ver</button>
+        <button class="btn" data-prato="Fiorentina">Ver</button>
       </div>
 
       <div class="item">
         <p class="item-line">Parmigiana di Melanzane Gourmet</p>
-        <button class="btn" id="parmigiana">Ver</button>
+        <button class="btn" data-prato="parmigiana">Ver</button>
       </div>
     </div>
   </section>
