@@ -78,11 +78,11 @@ header {
     border: none;
     cursor: pointer;
     font-weight: 500;
-    transition: ease-in-out 0.2s;
+    transition: all 0.3s ease;
 }
 
 .btn:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     background: var(--accentL);
 }
 
@@ -124,8 +124,12 @@ header {
     margin-top: 10px
 }
 
+.caixa_container{
+    width: 100%;
+}
+
 #caixa {
-  width: 300px;           /* ajuste conforme necessário */
+  width: 100%;           /* ajuste conforme necessário */
   height: auto;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
@@ -178,11 +182,11 @@ header {
 
 .card{
     width: 90%;
-    transition: ease-in-out 0.2s; 
+    transition: all 0.3s ease; 
 }
 
 .card:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     background: var(--accent);
 }
 
