@@ -126,11 +126,19 @@ header {
 
 .caixa_container{
     width: 100%;
+    position: relative;
+}
+
+.caixa_container h1{
+    bottom: 1em;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
 }
 
 #caixa {
   width: 100%;           /* ajuste conforme necessário */
-  height: auto;
+  height: 23em;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
 }
