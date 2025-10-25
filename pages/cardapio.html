@@ -1,117 +1,418 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Cardápio - Essenza Moral</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&family=Italianno&display=swap">
     <link rel="stylesheet" href="/css/cardapio.css">
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-    <div class="frame">
-        <header>
-            <div class="logo">
-                <img src="/images/inicio/logo.png" alt="">
+
+    <header>
+        <div class="logo-text">Essenza Moral</div>
+
+        <nav class="navigation">
+            <ul class="nav_holder">
+                <a href="/index.html">Início</a>
+                <a href="#">Cardápio</a>
+                <a href="/pages/unidade.html">Nossa unidade</a>
+                <a href="/pages/sobre.html">Sobre nós</a>
+            </ul>
+        </nav>
+
+        <a href="/pages/reserva/reserva.html"><button class="btn">Fazer Reserva</button></a>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero_cardapio">
+        <h1>Il Nostro Menù</h1>
+        <p>Uma jornada pelos sabores autênticos da Itália, preparados com paixão e ingredientes selecionados</p>
+    </section>
+
+    <!-- Menu Container -->
+    <div class="menu_container">
+
+        <!-- Antipasti -->
+        <section class="menu_section">
+            <div class="section_header">
+                <h2>Antipasti</h2>
+                <p>Para começar sua experiência</p>
             </div>
 
-            <nav class="navigation">
-                <ul class="nav_holder">
-                    <a href="/index.html">Início</a>
-                    <a href="#">Cardápio</a>
-                    <a href="./unidade.html">Nossa unidade</a>
-                    <a href="./sobre.html">Sobre nós</a>
-                </ul>
-            </nav>
-
-            <button class="btn">Fazer Reserva</button>
-        </header>
-
-        <main class="container">
-            <section class="hero-left">
-                <div>
-                    <div class="eyebrow">Traditional Artisan Bakery</div>
-                    <h1>Traditional<br>Artisan Bakery</h1>
-                    <p class="lead">Little Red Hen is dedicated to producing breads using traditional baking techniques
-                        —
-                        handmade bread, granola, cookies and more with simple, high quality ingredients. All baked
-                        locally
-                        in our woodfired brick oven.</p>
-                    <a class="cta" href="#">Shop Now</a>
-
-                    <div class="meta">Salmon Arm, British Columbia • +1 250 803 2723</div>
+            <div class="menu_grid">
+                <div class="menu_item">
+                    <img class="menu_item_img" src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=400" alt="Bruschetta">
+                    <div class="menu_item_content">
+                        <div>
+                            <div class="menu_item_header">
+                                <h3>Bruschetta Classica</h3>
+                                <span class="menu_item_price">R$ 28</span>
+                            </div>
+                            <p class="menu_item_description">Pão italiano tostado com tomate fresco, manjericão, alho e azeite extra virgem</p>
+                        </div>
+                        <div class="menu_item_tags">
+                            <span class="tag">Vegetariano</span>
+                        </div>
+                    </div>
                 </div>
 
-
-                <div class="section-title">Customer Favourites</div>
-
-                <div class="grid">
-                    <article class="card">
-                        <img src="/images/img_pages/cardapio/carne de pimeira.jpg" alt="carne">
-                        <h4>carne de premium</h4>
-                        <div class="price">$130.00</div>
-                        <a class="add" href="#">Add</a>
-                    </article>
-
-                    <article class="card featured">
-                        <img src="/images/img_pages/cardapio/espaguete.jpg" alt="espaguete a bolanhesa">
-                        <h4>Espaguete a bolanhesa</h4>
-                        <div class="price">$45.00</div>
-                        <a class="add" href="#">Add</a>
-                    </article>
-
-                    <article class="card">
-                        <img src="/images/img_pages/cardapio/lasanha.jpg" alt="lasanha especial">
-                        <h4>lasanha especial</h4>
-                        <div class="price">$75.00</div>
-                        <a class="add" href="#">Add</a>
-                    </article>
-
-                    <article class="card">
-                        <img src="/images/img_pages/cardapio/ensopado.png" alt="ensopado com carne">
-                        <h4>ensopado de carne </h4>
-                        <div class="price">$55.00</div>
-                        <a class="add" href="#">Add</a>
-                    </article>
-
-                    <article class="card">
-                        <img src="/images/img_pages/cardapio/salada.jpg" alt="salada">
-                        <h4>salada</h4>
-                        <div class="price">$65.00</div>
-                        <a class="add" href="#">Add</a>
-                    </article>
-
-                    <article class="card">
-                        <img src="/images/img_pages/cardapio/pizza.jpg" alt="pizza de marguerida">
-                        <h4>pizza de marguerrita</h4>
-                        <div class="price">$155.00</div>
-                        <a class="add" href="#">Add</a>
-                    </article>
+                <div class="menu_item destaque">
+                    <img class="menu_item_img" src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400" alt="Burrata">
+                    <div class="menu_item_content">
+                        <div>
+                            <div class="menu_item_header">
+                                <h3>Burrata com Tomate</h3>
+                                <span class="menu_item_price">R$ 48</span>
+                            </div>
+                            <p class="menu_item_description">Burrata artesanal com tomates confitados, rúcula e redução de balsâmico</p>
+                        </div>
+                        <div class="menu_item_tags">
+                            <span class="tag">Vegetariano</span>
+                            <span class="tag">Chef</span>
+                        </div>
+                    </div>
                 </div>
 
-            </section>
-        </main>
+                <div class="menu_item">
+                    <img class="menu_item_img" src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=400" alt="Carpaccio">
+                    <div class="menu_item_content">
+                        <div>
+                            <div class="menu_item_header">
+                                <h3>Carpaccio di Manzo</h3>
+                                <span class="menu_item_price">R$ 52</span>
+                            </div>
+                            <p class="menu_item_description">Finas fatias de carne bovina com alcaparras, parmesão e azeite trufado</p>
+                        </div>
+                        <div class="menu_item_tags">
+                            <span class="tag">Premium</span>
+                        </div>
+                    </div>
+                </div>
 
-         <footer>
-    <div class="redes">
-      <a href="">
-        <img src="/images/icons/instagram.png" alt="">
-      </a>
-      <a href="">
-        <img src="/images/icons/whatsapp.png">
-      </a>
-    </div>
+                <div class="menu_item">
+                    <img class="menu_item_img" src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?w=400" alt="Prosciutto">
+                    <div class="menu_item_content">
+                        <div>
+                            <div class="menu_item_header">
+                                <h3>Tábua de Frios</h3>
+                                <span class="menu_item_price">R$ 68</span>
+                            </div>
+                            <p class="menu_item_description">Seleção de presuntos, salames, queijos italianos e geleias artesanais</p>
+                        </div>
+                        <div class="menu_item_tags">
+                            <span class="tag">Para Compartilhar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="direitos">
-      <p>Todos os direitos reservados - Essenza Moral © 2025</p>
-    </div>
-    
-  </footer>
-    </div>
-</body>
+        <!-- Primi Piatti -->
+        <section class="menu_section">
+            <div class="section_header">
+                <h2>Primi Piatti</h2>
+                <p>Massas e risotos artesanais</p>
+            </div>
 
-</html>
+            <div class="menu_grid">
+                <div class="menu_item destaque">
+                    <img class="menu_item_img" src="https://images.unsplash.com/photo-1621996346294-fbc2f0671a93?w=400" alt="Carbonara">
+                    <div class="menu_item_content">
+                        <div>
+                            <div class="menu_item_header">
+                                <h3>Spaghetti alla Carbonara</h3>
+                                <span class="menu_item_price">R$ 58</span>
+                            </div>
+                            <p class="menu_item_description">Receita tradicional com guanciale, ovos, pecorino romano e pimenta preta</p>
+                        </div>
+                        <div class="menu_item_tags">
+                            <span class="tag">Tradicional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu_item">
+                    <img class="menu_item_img" src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400" alt="Tagliatelle">
+                    <div class="menu_item_content">
+                        <div>
+                            <div class="menu_item_header">
+                                <h3>Tagliatelle al Ragù</h3>
+                                <span class="menu_item_price">R$ 62</span>
+                            </div>
+                            <p class="menu_item_description">Massa fresca com molho de carne cozido por 8 horas</p>
+                        </div>
+                        <div class="menu_item_tags">
+                            <span class="tag">Signature</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu_item">
+                    <img class="menu_item_img" src="https://images.unsplash.com/photo-1476124369491-c4ca30d0129e?w=400" alt="Risotto">
+                    <div class="menu_item_content">
+                        <div>
+                            <div class="menu_item_header">
+                                <h3>Risotto ai Funghi Porcini</h3>
+                                <span class="menu_item_price">R$ 72</span>
+                            </div>
+                            <p class="menu_item_description">Risotto cremoso com funghi porcini, manteiga e parmesão</p>
+                        </div>
+                        <div class="menu_item_tags">
+                            <span class="tag">Vegetariano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu_item destaque">
+                    <img class="menu_item_img" src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400" alt="Lasagna">
+                    <div class="menu_item_content">
+                        <div>
+                            <div class="menu_item_header">
+                                <h3>Lasagna alla Bolognese</h3>
+                                <span class="menu_item_price">R$ 65</span>
+                            </div>
+                            <p class="menu_item_description">Camadas de massa, ragù bolonhesa, bechamel e parmesão gratinado</p>
+                        </div>
+                        <div class="menu_item_tags">
+                            <span class="tag">Best Seller</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Secondi Piatti -->
+        <section class="menu_section">
+            <div class="section_header">
+                <h2>Secondi Piatti</h2>
+                <p>Pratos principais</p>
+            </div>
+
+            <div class="menu_grid">
+                <div class="menu_item">
+                    <img class="menu_item_img" src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400" alt="Ossobuco">
+                    <div class="menu_item_content">
+                        <div>
+                            <div class="menu_item_header">
+                                <h3>Ossobuco alla Milanese</h3>
+                                <span class="menu_item_price">R$ 98</span>
+                            </div>
+                            <p class="menu_item_description">Ossobuco braseado servido com risotto allo zafferano e gremolata</p>
+                        </div>
+                        <div class="menu_item_tags">
+                            <span class="tag">Premium</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu_item destaque">
+                    <img class="menu_item_img" src="https://images.unsplash.com/photo-1600891964092-4316c288032e?w=400" alt="Bistecca">
+                    <div class="menu_item_content">
+                        <div>
+                            <div class="menu_item_header">
+                                <h3>Bistecca alla Fiorentina</h3>
+                                <span class="menu_item_price">R$ 145</span>
+                            </div>
+                            <p class="menu_item_description">T-bone de 800g grelhado, servido com batatas assadas e rúcula</p>
+                        </div>
+                        <div class="menu_item_tags">
+                            <span class="tag">Premium</span>
+                            <span class="tag">Chef</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu_item">
+                    <img class="menu_item_img" src="https://images.unsplash.com/photo-1580959375944-c696f11e8167?w=400" alt="Frango">
+                    <div class="menu_item_content">
+                        <div>
+                            <div class="menu_item_header">
+                                <h3>Pollo alla Parmigiana</h3>
+                                <span class="menu_item_price">R$ 68</span>
+                            </div>
+                            <p class="menu_item_description">Peito de frango empanado com molho de tomate e queijo gratinado</p>
+                        </div>
+                        <div class="menu_item_tags">
+                            <span class="tag">Clássico</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu_item">
+                    <img class="menu_item_img" src="https://images.unsplash.com/photo-1559847844-5315695dadae?w=400" alt="Peixe">
+                    <div class="menu_item_content">
+                        <div>
+                            <div class="menu_item_header">
+                                <h3>Salmone al Limone</h3>
+                                <span class="menu_item_price">R$ 82</span>
+                            </div>
+                            <p class="menu_item_description">Salmão grelhado com molho de limão siciliano, ervas e legumes</p>
+                        </div>
+                        <div class="menu_item_tags">
+                            <span class="tag">Saudável</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pizzas -->
+        <section class="menu_section">
+            <div class="section_header">
+                <h2>Le Pizze</h2>
+                <p>Pizzas no forno a lenha</p>
+            </div>
+
+            <div class="menu_grid">
+                <div class="menu_item destaque">
+                    <img class="menu_item_img" src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400" alt="Margherita">
+                    <div class="menu_item_content">
+                        <div>
+                            <div class="menu_item_header">
+                                <h3>Pizza Margherita</h3>
+                                <span class="menu_item_price">R$ 52</span>
+                            </div>
+                            <p class="menu_item_description">Molho de tomate San Marzano, mozzarella di bufala, manjericão e azeite</p>
+                        </div>
+                        <div class="menu_item_tags">
+                            <span class="tag">Tradicional</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu_item">
+                    <img class="menu_item_img" src="https://images.unsplash.com/photo-1590534047920-531d7ecff14e?w=400" alt="Quattro Formaggi">
+                    <div class="menu_item_content">
+                        <div>
+                            <div class="menu_item_header">
+                                <h3>Quattro Formaggi</h3>
+                                <span class="menu_item_price">R$ 58</span>
+                            </div>
+                            <p class="menu_item_description">Mozzarella, gorgonzola, parmesão e fontina</p>
+                        </div>
+                        <div class="menu_item_tags">
+                            <span class="tag">Vegetariano</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu_item">
+                    <img class="menu_item_img" src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=400" alt="Prosciutto">
+                    <div class="menu_item_content">
+                        <div>
+                            <div class="menu_item_header">
+                                <h3>Prosciutto e Rucola</h3>
+                                <span class="menu_item_price">R$ 62</span>
+                            </div>
+                            <p class="menu_item_description">Molho de tomate, mozzarella, prosciutto di Parma e rúcula fresca</p>
+                        </div>
+                        <div class="menu_item_tags">
+                            <span class="tag">Premium</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu_item">
+                    <img class="menu_item_img" src="https://images.unsplash.com/photo-1571997478779-2adcbbe9ab2f?w=400" alt="Diavola">
+                    <div class="menu_item_content">
+                        <div>
+                            <div class="menu_item_header">
+                                <h3>Diavola</h3>
+                                <span class="menu_item_price">R$ 55</span>
+                            </div>
+                            <p class="menu_item_description">Molho de tomate, mozzarella, calabresa picante e pimenta</p>
+                        </div>
+                        <div class="menu_item_tags">
+                            <span class="tag">Picante</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dolci -->
+        <section class="menu_section">
+            <div class="section_header">
+                <h2>Dolci</h2>
+                <p>Sobremesas tradicionais</p>
+            </div>
+
+            <div class="bebidas_grid">
+                <div class="bebida_card">
+                    <h4>Tiramisù</h4>
+                    <p>Clássico italiano com café e mascarpone</p>
+                    <span class="bebida_price">R$ 28</span>
+                </div>
+
+                <div class="bebida_card">
+                    <h4>Panna Cotta</h4>
+                    <p>Com calda de frutas vermelhas</p>
+                    <span class="bebida_price">R$ 24</span>
+                </div>
+
+                <div class="bebida_card">
+                    <h4>Cannoli Siciliani</h4>
+                    <p>Massa crocante com ricota adocicada</p>
+                    <span class="bebida_price">R$ 26</span>
+                </div>
+
+                <div class="bebida_card">
+                    <h4>Gelato Artigianale</h4>
+                    <p>3 bolas de sabores variados</p>
+                    <span class="bebida_price">R$ 22</span>
+                </div>
+
+                <div class="bebida_card">
+                    <h4>Affogato</h4>
+                    <p>Gelato de baunilha com espresso</p>
+                    <span class="bebida_price">R$ 20</span>
+                </div>
+
+                <div class="bebida_card">
+                    <h4>Torta della Nonna</h4>
+                    <p>Torta de creme com pinoli</p>
+                    <span class="bebida_price">R$ 25</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bebidas -->
+        <section class="menu_section">
+            <div class="section_header">
+                <h2>Vini e Bevande</h2>
+                <p>Vinhos e bebidas selecionadas</p>
+            </div>
+
+            <div class="bebidas_grid">
+                <div class="bebida_card">
+                    <h4>Chianti Classico</h4>
+                    <p>Tinto toscano DOCG</p>
+                    <span class="bebida_price">R$ 180</span>
+                </div>
+
+                <div class="bebida_card">
+                    <h4>Prosecco Valdobbiadene</h4>
+                    <p>Espumante italiano DOC</p>
+                    <span class="bebida_price">R$ 140</span>
+                </div>
+
+                <div class="bebida_card">
+                    <h4>Pinot Grigio</h4>
+                    <p>Branco do Vêneto</p>
+                    <span class="bebida_price">R$ 120</span>
+                </div>
+
+                <div class="bebida_card">
+                    <h4>Aperol Spritz</h4>
+                    <p>Aperitivo clássico italiano</p>
+                    <span class="bebida_price">R$ 32</span>
+                </div>
+
+                <div class="bebida_card">
+                    <h4>Negroni</h4>
+                    <p>Gin, Campari e vermute</p>
+                    <span class="bebida_price">R$

@@ -140,7 +140,7 @@ header {
 }
 
 .h1_animation{
-    animation: h1Animation 0.3s ease-in;
+    animation: h1Animation 1.3s ease-in;
 }
 
 #caixa {
@@ -296,11 +296,9 @@ footer .direitos{
 
 @keyframes h1Animation{
     to{
-        right: 0;
         opacity: 100%;
     }
     from{
-        right: 20%;
         opacity: 0;
     }
 }
