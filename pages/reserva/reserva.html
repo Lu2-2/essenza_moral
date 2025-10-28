@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reserva - Esseza Moral</title>
     <link rel="stylesheet" href="/css/style.css">
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <script type="text/babel" src="index.jsx"></script>
+    <script src="reserva.js" defer></script>
 </head>
 
 <body>
@@ -21,15 +20,35 @@
                 <a href="/index.html">Início</a>
                 <a href="/pages/cardapio.html">Cardápio</a>
                 <a href="/pages/unidade.html">Nossa unidade</a>
-                <a href="/pages/sobre.html">Sobre nós</a>
             </ul>
         </nav>
 
         <a href=""><button class="btn">Fazer Reserva</button></a>
     </header>
 
-    <div id="react_container">
-    </div>
+    <section>
+        <form id="meu-form" action="#">
+
+            <div class="text-field">
+                <label for="text">Nome</label>
+                <input onchange="form()" value="" id="form_name" type="text" placeholder="Escreva seu nome completo">
+            </div>
+
+            <div class="text-field">
+                <label for="text">Dia</label>
+                <input id="form_date" type="date">
+            </div>
+
+            <div class="text-field">
+                <label for="text">Hora</label>
+                <input id="form_time" type="time">
+            </div>
+
+            <div class="text-field">
+                <input type="submit">
+            </div>
+        </form>
+    </section>
 </body>
 
 </html>

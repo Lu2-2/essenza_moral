@@ -23,6 +23,7 @@ body {
 
 header {
     font-size: 1.3em;
+    font-weight: 400;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -30,21 +31,23 @@ header {
     background: #000;
 }
 
-.logo-text {
-    font-family: var(--font-1);
-    font-size: 2.5rem;
-    color: var(--accent);
+.logo img {
+    width: 120px;
+    padding: 10px;
+    border-radius: 6px
 }
 
 .nav_holder a {
     text-decoration: none;
     color: var(--text);
+    height: 12px;
+    width: 60px;
+    border-radius: 6px;
     padding: 10px;
-    margin: 0 5px;
     position: relative;
 }
 
-.nav_holder a::after {
+.nav_holder a::after{
     content: "";
     width: 0%;
     height: 4px;
@@ -56,7 +59,7 @@ header {
     transition: 0.3s ease-in-out;
 }
 
-.nav_holder a:hover::after {
+.nav_holder a:hover::after{
     width: 100%;
 }
 
