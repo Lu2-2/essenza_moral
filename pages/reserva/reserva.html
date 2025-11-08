@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reserva - Esseza Moral</title>
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/reserva.css">
     <script src="reserva.js" defer></script>
 </head>
 
@@ -26,12 +27,12 @@
         <a href=""><button class="btn">Fazer Reserva</button></a>
     </header>
 
-    <section>
-        <form id="meu-form" action="#">
+    <section class="form_container">
+        <form id="form" action="#">
 
             <div class="text-field">
                 <label for="text">Nome</label>
-                <input onchange="form()" value="" id="form_name" type="text" placeholder="Escreva seu nome completo">
+                <input value="" id="form_name" type="text" placeholder="Escreva seu nome completo">
             </div>
 
             <div class="text-field">
@@ -44,9 +45,7 @@
                 <input id="form_time" type="time">
             </div>
 
-            <div class="text-field">
-                <input type="submit">
-            </div>
+            <input type="submit" class="btn">
         </form>
     </section>
 </body>

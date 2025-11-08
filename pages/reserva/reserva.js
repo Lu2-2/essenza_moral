@@ -4,8 +4,10 @@ const hora = document.querySelector('#form_time');
 const formulario = document.querySelector('#meu-form');
 
 formulario.addEventListener('submit', (event) => {
-    event.preventDefault(); // Importante!
+    event.preventDefault();
     
+    console.log('enviado')
+
     console.log({
         nome: nome.value,
         dia: dia.value,

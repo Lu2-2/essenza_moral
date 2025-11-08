@@ -105,19 +105,14 @@ header {
 .boas_vindas h1  {
     font-family: var(--font-1);
     font-weight: 100;
-    font-size: 6.5rem;
-    border-radius: 8px;
-    margin-bottom: 12px;
-    padding: 10px;
+    font-size: 6rem;
+    margin-bottom: 10px;
 }
 
 .boas_vindas .descricao p  {
-    font-family: var(--font-2);
-    font-size: 1.5rem;
-    height: auto;
-    width: 65%;
-    border-radius: 6px;
-    margin: 0 auto 14px auto
+    font-size: 1.3rem;
+    max-width: 600px;
+    color: var(--text);
 }
 
 .boas_vindas .btn {
@@ -187,10 +182,11 @@ header {
 }
 
 .card img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 90%;
     height: auto;
-    padding: 2px;
-    border: solid 2px white;
     margin: 30px;
     border-radius: 10px;
 }
@@ -294,11 +290,22 @@ footer .direitos{
     align-items: center;
 }
 
-@keyframes h1Animation{
-    to{
-        opacity: 100%;
+/* Responsividade */
+
+@media (max-width: 1024px) {
+    .card{
+        width: 100%;
     }
-    from{
-        opacity: 0;
+
+    .mais_vendidos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mais_vendidos_grid{
+        width: 50%;
+        grid-template-columns: 1fr;
     }
 }
