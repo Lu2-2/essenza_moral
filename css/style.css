@@ -51,7 +51,7 @@ header {
     position: relative;
 }
 
-.nav_holder a::after{
+.nav_holder a::after {
     content: "";
     width: 0%;
     height: 4px;
@@ -63,7 +63,7 @@ header {
     transition: 0.3s ease-in-out;
 }
 
-.nav_holder a:hover::after{
+.nav_holder a:hover::after {
     width: 100%;
 }
 
@@ -81,7 +81,7 @@ header {
     transition: all 0.3s ease;
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale(1.05);
     background: var(--accentL);
 }
@@ -102,14 +102,14 @@ header {
 }
 
 
-.boas_vindas h1  {
+.boas_vindas h1 {
     font-family: var(--font-1);
     font-weight: 100;
     font-size: 6rem;
     margin-bottom: 10px;
 }
 
-.boas_vindas .descricao p  {
+.boas_vindas .descricao p {
     font-size: 1.3rem;
     max-width: 600px;
     color: var(--text);
@@ -119,12 +119,12 @@ header {
     margin-top: 10px
 }
 
-.caixa_container{
+.caixa_container {
     width: 100%;
     position: relative;
 }
 
-#caixa_texto{
+#caixa_texto {
     font-family: var(--font-1);
     font-size: 2.4rem;
     width: 100%;
@@ -134,19 +134,20 @@ header {
     position: absolute;
 }
 
-.h1_animation{
+.h1_animation {
     animation: h1Animation 1.3s ease-in;
 }
 
 #caixa {
-  width: 100%;           /* ajuste conforme necessário */
-  height: 23em;
-  opacity: 1;
-  transition: opacity 0.8s ease-in-out;
+    width: 100%;
+    /* ajuste conforme necessário */
+    height: 23em;
+    opacity: 1;
+    transition: opacity 0.8s ease-in-out;
 }
 
 #caixa.fade-out {
-  opacity: 0;
+    opacity: 0;
 }
 
 /* mais_vendidos */
@@ -160,7 +161,7 @@ header {
     font-size: 5rem;
     font-weight: 100;
     border-radius: 6px;
-    margin: 0 auto 30px
+    margin: 0 auto 40px
 }
 
 .mais_vendidos_grid {
@@ -179,9 +180,12 @@ header {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    width: 90%;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
 }
 
-.card img{
+.card img {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -191,17 +195,13 @@ header {
     border-radius: 10px;
 }
 
-.card{
-    width: 90%;
-    transition: all 0.3s ease; 
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: 0 10px 30px rgba(230, 126, 34, 0.2);
 }
 
-.card:hover{
-    transform: scale(1.05);
-    background: var(--accent);
-}
-
-.card h1{
+.card h1 {
     font-size: 3.3em;
     font-family: var(--font-1);
     font-weight: 500;
@@ -221,20 +221,20 @@ header {
     padding: 60px 40px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center
+    gap: 80px;
 }
 
 .specials img {
-    width: 100%;
-    height: 280px;
-    background: #444;
     border-radius: 10px
+}
+
+.specials .caixa_container {
+    width: 100%;
 }
 
 .special-list h1 {
     width: 100%;
-    text-align: center  ;
+    text-align: center;
     border-radius: 6px;
     margin-bottom: 20px
 }
@@ -268,7 +268,7 @@ footer {
     margin-top: 40px
 }
 
-footer .redes{
+footer .redes {
     position: absolute;
     display: flex;
     justify-content: initial;
@@ -276,14 +276,14 @@ footer .redes{
     gap: 10px;
 }
 
-.redes img{
+.redes img {
     width: 30px;
     background: #f9f9f9;
     border-radius: 100%;
     padding: 1px;
 }
 
-footer .direitos{
+footer .direitos {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -293,19 +293,26 @@ footer .direitos{
 /* Responsividade */
 
 @media (max-width: 1024px) {
-    .card{
+    .card {
         width: 100%;
     }
 
-    .mais_vendidos{
+    .mais_vendidos {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
     }
 
-    .mais_vendidos_grid{
+    .mais_vendidos_grid {
         width: 50%;
         grid-template-columns: 1fr;
+    }
+
+    .specials {
+        padding: 60px 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
     }
 }

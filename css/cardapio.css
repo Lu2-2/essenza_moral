@@ -134,7 +134,8 @@ header {
 
 .section_header p {
     font-size: 1.1rem;
-    color: var(--muted);
+    font-weight: 600;
+    color: var(--text);
 }
 
 .menu_grid {
