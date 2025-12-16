@@ -9,7 +9,7 @@ botoes.forEach(botao => {
 
     // aplica o fade-out
     caixa.classList.add('fade-out');
-    h1.classList.add('h1_animation');
+    h1.classList.add('fade-out');
 
     // troca a imagem após o fade-out
     setTimeout(() => {
@@ -18,7 +18,7 @@ botoes.forEach(botao => {
       // espera um pouco a imagem carregar e aplica fade-in
       caixa.onload = () => {
         caixa.classList.remove('fade-out');
-        h1.classList.remove('h1_animation')
+        h1.classList.remove('fade-out')
       };
     }, 400); // tempo antes de trocar (metade da transição)
   });
