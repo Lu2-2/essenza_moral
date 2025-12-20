@@ -12,29 +12,13 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 body {
     font-family: var(--font-2);
     background: var(--bg);
     color: var(--text);
-}
-
-header {
-    font-size: 1.3em;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 40px;
-    background: #000;
-}
-
-.logo img {
-    width: 120px;
-    padding: 10px;
-    border-radius: 6px
 }
 
 .nav_holder a {
@@ -47,7 +31,7 @@ header {
     position: relative;
 }
 
-.nav_holder a::after{
+.nav_holder a::after {
     content: "";
     width: 0%;
     height: 4px;
@@ -59,7 +43,7 @@ header {
     transition: 0.3s ease-in-out;
 }
 
-.nav_holder a:hover::after{
+.nav_holder a:hover::after {
     width: 100%;
 }
 
@@ -73,6 +57,7 @@ header {
     outline: none;
     border: none;
     cursor: pointer;
+    font-weight: 500;
     transition: all 0.3s ease;
 }
 
@@ -102,11 +87,6 @@ header {
     margin-bottom: 10px;
 }
 
-.hero_cardapio p {
-    font-size: 1.3rem;
-    max-width: 600px;
-    color: var(--text);
-}
 
 /* Menu Sections */
 .menu_container {
@@ -352,6 +332,10 @@ footer .redes {
 }
 
 @media (max-width: 768px) {
+    header{
+        
+    }
+
     .hero_cardapio h1 {
         font-size: 4rem;
     }
